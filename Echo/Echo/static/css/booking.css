@@ -32,7 +32,7 @@ body {
     background-color : transparent;
     background-size: cover;
     border-radius: 5px;
-    z-index: 20
+    z-index: 20,
 }
 
 .booking-form::before {
