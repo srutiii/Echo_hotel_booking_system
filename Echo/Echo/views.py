@@ -29,3 +29,6 @@ def login_signup(request):
 def booking(request):
     return render(request, "booking.html")
 
+def billing(request):
+    return render(request, "billing.html")
+

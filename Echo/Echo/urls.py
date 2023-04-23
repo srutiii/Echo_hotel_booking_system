@@ -27,7 +27,8 @@ urlpatterns = [
     path('rooms/', views.rooms),
     path('room-details/', views.roomDetails),
     path('login_signup/', views.login_signup),
-    path('booking/', views.booking)
+    path('booking/', views.booking),
+    path('billing/', views.billing)
 
     # path('pages/<slug:address>'views.pages)
 ]

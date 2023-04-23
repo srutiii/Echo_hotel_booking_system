@@ -23,7 +23,7 @@ body {
 
 .booking-form {
     position: relative;
-    max-width: 642px;
+    /* max-width: 642px; */
     width: 100%;
     margin: auto;
     padding: 40px;
@@ -32,7 +32,8 @@ body {
     background-color : transparent;
     background-size: cover;
     border-radius: 5px;
-    z-index: 20,
+    z-index: 20;
+    color: white;
 }
 
 .booking-form::before {
@@ -49,10 +50,11 @@ body {
 .booking-form .form-header {
     text-align: center;
     position: relative;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    /* margin-top: 30px; */
 }
 
-.booking-form .form-header h1 {
+.booking-form .form-header {
     font-weight: 700;
     text-transform: capitalize;
     font-size: 42px;
@@ -66,12 +68,12 @@ body {
 }
 
 .booking-form .form-control {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.473);
     height: 60px;
     padding: 0px 25px;
     border: none;
     border-radius: 40px;
-    color: black;
+    color: white;
     -webkit-box-shadow: 0px 0px 0px 2px transparent;
     box-shadow: 0px 0px 0px 2px transparent;
     -webkit-transition: 0.2s;
@@ -91,8 +93,8 @@ body {
 }
 
 .booking-form .form-control:focus {
-    -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
-    box-shadow: 0px 0px 0px 2px #ff8846
+    -webkit-box-shadow: 0px 0px 0px 2px #573b8a;
+    box-shadow: 0px 0px 0px 2px #573b8a
 }
 
 .booking-form input[type="date"].form-control {
@@ -129,7 +131,7 @@ body {
     height: 32px;
     text-align: center;
     pointer-events: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.473);
     font-size: 14px
 }
 
@@ -149,7 +151,7 @@ body {
     top: -10px;
     left: 25px;
     opacity: 0;
-    color: #ff8846;
+    color: #573b8a;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -170,8 +172,8 @@ body {
 }
 
 .booking-form .submit-btn {
-    color: black;
-    background-color: #e35e0a;
+    color: white;
+    background-color: #573b8a;
     font-weight: 700;
     height: 60px;
     padding: 10px 30px;
