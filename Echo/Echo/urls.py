@@ -19,6 +19,7 @@ from Echo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('',views.homepage),
     path('about-us/', views.aboutUs),
     path('blog-details/', views.blogDetails),

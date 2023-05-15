@@ -1,145 +1,151 @@
-{% load static %}
-
+{% load static%}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Sona Template">
-    <meta name="keywords" content="Sona, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Echo</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/booking.css' %}">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Echo</title>
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'css/booking.css' %}" />
 </head>
 
 <body>
- <section>
-    <header class="header-section">
-        <div class="top-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="logo">
-                            <a href="/">
-                                <img src="{% static 'img/echo_head.png' %}" alt="">
-                            </a>
-                        </div>
-                    </div>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
                     
-    <div class="col-lg-12">
-                        
-    <div id="booking" class="section">
-        <div class="section-center">
-         <div class="container">
-            <div class="row">
-                <div class="booking-form">
-                    <div class="form-header">
-                        <h1>Make your reservation</h1>
-                    </div>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group"> 
-                                    <!-- <label for="FirstName">First Name</label> -->
-                                    <input class="form-control" name="FirstName" type="text" placeholder="First Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group"> 
-                                    <input class="form-control" type="text" placeholder="Last Name">
-                                     <!-- <span class="form-label">Name</span> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group"> 
-                            <input class="form-control" type="text" placeholder="Country, ZIP, city...">
-                             <span class="form-label">Destination</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group"> 
-                                    <input class="form-control" type="date" required>
-                                     <span class="form-label">Check In</span> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Check out</span> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group" >
-                                <select id="room" class="form-control" required>
-                                    <span for="room">Room</span>
-                                    <option value="">Room</option>
-                                    <option value="">1 Room</option>
-                                    <option value="">2 Room</option>
-                                    <option value="">3 Room</option>
-                                </select>
-                                 </div>
-                            </div>
-            
-                            <div class="col-md-4">
-                                <div class="form-group"> 
-                                    <select id="adults" class="form-control" required>
-                                        <span for="adults">Adults</span>
-                                        <option value="">Adults</option>
-                                        <option value="">1 Adults</option>
-                                        <option value="">2 Adults</option>
-                                        <option value="">3 Adults</option>
-                                        <option value="">4 Adults</option>
-                                        <option value="">5 Adults</option>
-                                    </select>
-                                    <!-- <span class="select-arrow"></span> <span class="form-label">Adults</span>  -->
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <select id="Children" class="form-control" required>
-                                        <span for="Children">Children</span>
-                                        <option value="">Children</option>
-                                        <option value="">0 Children</option>
-                                        <option value="">1 Children</option>
-                                        <option value="">2 Children</option>
-                                        <option value="">3 Children</option>
-                                    </select>
-                                    <!-- <span class="select-arrow"></span> <span class="form-label">Children</span> -->
-                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email"> <span class="form-label">Email</span> </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group"> <input class="form-control" type="tel" placeholder="Enter you Phone"> <span class="form-label">Phone</span> </div>
-                            </div>
-                        </div>
-                        <div class="form-btn"> <button class="submit-btn" href="/">Book Now</button> </div>
-                    </form>
-                 </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</section>
+					<div class="booking-form">
+                        <a href="/">
+                            <img src="{% static 'img/echo_footer.png' %}" alt="">
+                        </a>
+						<div class="form-header">
+							<h1>Make your reservation</h1>
+						</div>
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group"> 
+										<!-- <label for="FirstName">First Name</label> -->
+										<input class="form-control" name="FirstName" type="text" placeholder="First Name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group"> 
+										<input class="form-control" type="text" placeholder="Last Name">
+										 <!-- <span class="form-label">Name</span> -->
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Country, ZIP, city...">
+								<span class="form-label">Destination</span>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label">Check In</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label">Check out</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>no of rooms</option>
+											<option>1 ROOM</option>
+											<option>2 ROOMS</option>
+											<option>3 ROOMS</option>
+											<option>4 ROOMS</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Rooms</span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>no of adults</option>
+											<option>1 Adult</option>
+											<option>2 Adults</option>
+											<option>3 Adults</option>
+											<option>4 Adults</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Adults</span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>no of children</option>
+											<option>0 children</option>
+											<option>1 children</option>
+											<option>2 children</option>
+											<option>3 children</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Children</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="email" placeholder="Enter your Email">
+										<span class="form-label">Email</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="tel" placeholder="Enter you Phone">
+										<span class="form-label">Phone</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<button class="submit-btn">Book Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
 
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+			}
+		}
+	</script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
